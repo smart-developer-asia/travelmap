@@ -59,7 +59,7 @@ if (loginForm) {
 }
 
 // Register Form
-const registerForm = document.querySelector("#register-form");
+const registerForm = document.querySelector("#signin-form");
 if (registerForm) {
   registerForm.addEventListener("submit", (e) => {
     e.preventDefault();
