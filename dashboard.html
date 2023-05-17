@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Travel Map</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>My Travel Map</h1>
+      <div id="map"></div>
+
+      <form id="form">
+        <label for="city" class="label">Visited City:</label>
+        <input type="text" id="city" name="city" />
+
+        <label for="startDate" class="label">Travel Date (Start):</label>
+        <input type="date" id="startDate" name="startDate" />
+        <b>(End):</b>
+        <input type="date" id="endDate" name="endDate" />
+
+        <label for="desc" class="label">Describe a Memory:</label>
+        <textarea id="desc" name="desc" rows="4"></textarea>
+
+        <div id="img-input">
+          <label for="img" class="label">Select Images:</label>
+          <input type="file" id="img" name="img" accept="image/*" multiple />
+        </div>
+
+        <input type="submit" value="Add to My Travel" />
+      </form>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
