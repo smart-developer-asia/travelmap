@@ -1,12 +1,3 @@
-firebase.auth().onAuthStateChanged((user) => {
-  if (!user) {
-    // User is not logged in, redirect to the login page
-    window.location.href = "index.html";
-  } else {
-    // User is logged in, continue with the page initialization
-    window.location.href = "dashboard.html";
-  }
-});
 
 // signup button
 function toggleSignup() {
